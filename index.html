@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para ti 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="fx" id="fx"></div>
+<div id="lb"><img id="lbimg" alt=""></div>
+
+<section class="screen" id="s1"><div class="card">
+  <div class="emoji">💌</div>
+  <h1>¿Recuerdas cómo empezó todo esto?</h1>
+  <div class="btns"><button id="yes">Sí</button><button id="no">No</button></div>
+  <div class="hint" id="hint"></div>
+</div></section>
+
+<section class="screen hidden" id="s2"><div class="card">
+  <div class="emoji">🔒</div>
+  <h2>Nuestra fecha</h2>
+  <p style="margin:0;font-size:15px">Escribe cuándo empezó todo<br><small>(día, mes y año: DDMMAAAA)</small></p>
+  <div class="dots" id="dots"></div>
+  <div class="pad" id="pad"></div>
+  <div class="hint" id="lockmsg"></div>
+</div></section>
+
+<section class="screen hidden" id="s3"><div class="card">
+  <div class="emoji">⏳</div>
+  <h2>Nuestro tiempo juntos</h2>
+  <div class="counter" id="counter"></div>
+  <p id="countmsg" style="font-size:15px;margin:0 0 20px"></p>
+  <button data-next="s4">Siguiente 💕</button>
+</div></section>
+
+<section class="screen hidden" id="s4"><div class="card wide">
+  <h2>Nuestros recuerdos</h2>
+  <div class="collage" id="collage"></div>
+  <button data-next="s5">Siguiente 💕</button>
+</div></section>
+
+<section class="screen hidden" id="s5"><div class="card wide">
+  <div class="emoji">💌</div>
+  <h2>Una carta para ti</h2>
+  <div class="letter" id="letter"></div>
+  <div class="hint">Toca la carta para verla completa</div>
+  <button id="toSong" style="display:none;margin-top:10px" data-next="s6">Siguiente 💕</button>
+</div></section>
+
+<section class="screen hidden" id="s6"><div class="card">
+  <h2>Una canción para ti</h2>
+  <div class="vinyl" id="vinyl"></div>
+  <p style="margin:0"><b id="songTitle"></b><br><span id="songArtist"></span></p>
+  <p id="songNote" style="font-size:15px;margin:14px 0"></p>
+  <div id="player"></div>
+  <h2 style="margin-top:22px">Feliz aniversario ❤️</h2>
+</div></section>
+
+<script src="script.js"></script>
+</body>
+</html>
